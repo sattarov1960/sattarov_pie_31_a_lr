@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Style/style.css">
+    <title>Лабораторная работа</title>
+</head>
+<body>
+    <div class="p_wrap">
+        <p>Лабораторная работа № 2</p>
+    </div>
+    <div class="lr">
+        
+        <div class="task1">
+            <h3 class="task_text_number">Задание 1</h3>
+            <div class="task_input">
+              <div>
+                <label class="label_text_main">Введите a: </label>
+                <input type="text" id="a" class="task_input_text_number">
+              </div>
+              <label class="label_text_desc">a должно быть меньше b и c</label>
+              <div>
+                <label class="label_text_main">Введите b: </label>
+                <input type="text" id="b" class="task_input_text_number">
+              </div>
+              <label class="label_text_desc">b должно быть больше a и меньше c</label>
+              <div>
+                <label class="label_text_main">Введите c: </label>
+                <input type="text" id="c" class="task_input_text_number">
+              </div>
+              <label class="label_text_desc">c должно быть больше a и b</label>
+            </div>
+            <div id="calc1">
+                <button class="btn_get_answer" onclick="calculateDistance()">Получить ответ</button>
+                <div id="result1" class="task_text_answer">Ответ: Не подсчитан</div>
+            </div>
+        </div>
+        
+        <div class="task2">
+            <h3 class="task_text_number">Задание 2</h3>
+            <div class="task_input">
+              <label class="label_text_main">Введите 4-x значное число:</label>
+              <input type="text" id="fourDigitNumber" class="task_input_text_number">
+            </div>
+            <label class="label_text_desc">Число должно быть больше 999</label>
+            <div id="calc2">
+                <button class="btn_get_answer" onclick="calculateThousandsDigit()">Получить ответ</button>
+                <div id="result2" class="task_text_answer">Ответ: Не подсчитан</div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/script2_1.js"></script>
+    <script src="../scripts/script2_2.js"></script>
+</body>
+</html>
