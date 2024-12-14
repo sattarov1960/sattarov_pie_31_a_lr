@@ -1,0 +1,114 @@
+{
+  "tg_bot": {
+    "token": "8179797638:AAHlQ5rKz0dMYEVTnvpv0qsRGJm_40hf6bI",
+    "support_telegram": "https://t.me/Biskvittty"
+  },
+  "text_gen": {
+    "unknown_language": "ru",
+    "paths": {"ru":  "./src/services/text_generator/text/ru.json",
+                  "en":  "./src/services/text_generator/text/en.json"}
+  },
+  "api": {
+    "pin_host": "http://127.0.0.1:8004",
+    "host": "0.0.0.0",
+    "port": 8004
+  },
+  "system": {
+    "admin_id": [836180239, 648438066],
+    "site_url": "https://luckypunch.space/",
+    "name_site": "Lucky Punch",
+    "log_user_id": 648438066,
+    "directory_log_payment_distribution": "log_payment_distribution"
+  },
+  "jackpot": {
+    "live_ribbon_fake_jackpot_min": 20,
+    "live_ribbon_fake_jackpot_max": 60,
+    "price_coins": 1000,
+    "price_score": 2,
+    "jackpot_notification_user_id": 648438066,
+    "jackpot_user_id_balance": 648438066,
+    "count_view_live_ribbon": 100,
+    "max_coin_percent": 100,
+    "min_coin_percent": 0,
+    "max_coin_prizes": 15,
+    "max_fake_items": 10,
+    "min_fake_items": 7,
+    "min_coin_prizes": 3,
+    "pool_size": 30,
+    "pool_coins": {"0": 100, "26": 200, "46": 300, "61": 400, "73": 500, "83": 600, "91": 700, "96": 800, "99": 900, "100": 1000},
+    "max_forward_payments_prizes": 15,
+    "min_forward_payments_prizes": 7,
+    "max_forward_payments_percent": 100,
+    "min_forward_payments_percent": 0,
+    "min_prize_balance_forward_payments": 100,
+    "pool_forward_payments": {"0": 10, "26": 20, "46": 30, "61": 40, "73": 50, "83": 60, "91": 70, "96": 80, "99": 90, "100": 100}
+  },
+  "photo": {
+    "photo_id": {
+      "1": "AgACAgIAAxkDAAMeZ0haODhfwv53TiDZw8GFpwJWONAAAqToMRt51UBKB-vGWwW4fccBAAMCAAN5AAM2BA",
+      "2": "AgACAgIAAxkDAAMfZ0haOEc9SxcEC3dl9g-0Ulj3gBQAAqXoMRt51UBKsscOERJtEBcBAAMCAAN5AAM2BA",
+      "3": "AgACAgIAAxkDAAMgZ0haONCErpnN-qIn7R8xoPV4WAoAAqboMRt51UBK7zTW5ehikpoBAAMCAAN5AAM2BA",
+      "4": "AgACAgIAAxkDAAMhZ0haOTkFFNoT4BqveilIgEsC4DcAAqfoMRt51UBKmuUgmOSQ4YwBAAMCAAN5AAM2BA",
+      "5": "AgACAgIAAxkDAAMiZ0haOZvEUJm61dTtDP2zti2smGIAAqjoMRt51UBKKKwGHCjFgfQBAAMCAAN5AAM2BA",
+      "6": "AgACAgIAAxkDAAMjZ0haOYHMhXRQdXGRXoI1y0A0QVAAAqnoMRt51UBKNSy01hHvO_EBAAMCAAN5AAM2BA",
+      "7": "AgACAgIAAxkDAAMkZ0haOpMBS9d7cXW81BcquvEGjtMAAqroMRt51UBKZUPcHWXudrQBAAMCAAN5AAM2BA",
+      "8": "AgACAgIAAxkDAAMlZ0haOowjo3mUNn7f1iaO1Bu98UsAAqvoMRt51UBK9s7iQ1livgcBAAMCAAN5AAM2BA"
+    }
+  },
+  "referral_system": {
+    "purchase_percentage": 10,
+    "referral_discount": 0,
+    "invite_link": "https://t.me/ILuckyPunchI_bot?start="
+  },
+  "subscription": {
+    "minimum_buy_time_subscription": 2419200,
+    "basic_subscription_id": 1
+  },
+  "price_colors": {
+    "items": {
+      "purple": 15,
+      "red":   30,
+      "blue":  45,
+      "yellow":  60,
+      "gold":   75,
+      "silver": 100
+    }
+  },
+  "flashscore": {
+    "username": "sattarov.1960@inbox.ru",
+    "password": "rMtFzdN3xXSi3f",
+    "project_id": 46,
+    "base_url": "https://www.flashscorekz.com",
+    "namespace": "flashscore"
+  },
+  "available_sites_for_parsing": {
+    "AVAILABLE_SITES_FOR_PARSING": ["FLASHSCORE"]
+  },
+  "forecast": {
+    "all_time": 3214080000,
+    "week": 604800,
+    "month": 2592000,
+    "start_lvl_fighters": 1,
+    "count_win_bets_to_lvl": {"1": 0, "2": 8, "3": 16, "4": 24, "5": 32, "6": 48, "7": 60, "8": 72, "9": 84, "10": 96, "11": 112, "12": 128, "13": 144, "14": 160, "15": 176, "16": 196, "17": 212, "18": 228, "19": 244, "20": 260, "21": 280, "22": 296, "23": 312, "24": 328, "25": 344, "26": 364, "27": 380, "28": 396, "29": 412, "30": 428, "31": 448, "32": 464, "33": 480, "34": 496, "35": 512, "36": 544},
+    "event_time": {"current": 86400, "future": 604800},
+    "score_participant_mma": {"participant_1": 1, "participant_2": 1, "participant_3": 1},
+    "score_participant_football": {"participant_1": 1, "participant_2": 1, "participant_3": 1}
+  },
+  "payment_system": {
+    "pay_in": {"1": {"view_name":  "РУБ | СБП | QR | SBER PAY", "commission": 1.07, "minimal_amount": 500, "id": 1, "name":  "AIFORY", "type": "pay_in", "active": true, "need_amount": true, "link": "", "allowed_methods": [10, 3, 61], "type_id": 4, "need_requisites": false, "name_requisites": "", "currency_id": 3, "recipient_type_id": null},"2": {"view_name":  "СБП P2P | Любой банк", "commission": 1.0, "id": 2, "name":  "СБП P2P", "type": "pay_in", "active": false, "need_amount": false, "link": "https://t.me/sbp_p2p_pay_bot_cyber_sport_bot", "minimal_amount": 500, "allowed_methods": [], "type_id": 0, "need_requisites": false, "name_requisites": "", "currency_id": null, "recipient_type_id": null},"3": {"view_name":  "Криптовалюта", "commission": 1.02, "minimal_amount": 1000, "id": 3, "name":  "AIFORY", "type": "pay_in", "active": true, "need_amount": true, "link": "", "allowed_methods": [1015, 1013, 1002, 1003, 1004, 1027, 1008, 1005, 1021, 1010], "type_id": 10, "need_requisites": false, "name_requisites": "", "currency_id": 3, "recipient_type_id": null}},
+    "pay_out": {"1": {"view_name":  "РУБ | Любые банк", "commission": 0.97, "minimal_amount": 2100, "id": 1, "name":  "AIFORY", "type": "pay_out", "active": true, "need_amount": true, "link": "", "allowed_methods": [], "type_id": 4, "need_requisites": true, "name_requisites": "банковскую карту", "currency_id": 3, "recipient_type_id": 4},"2": {"view_name":  "СБП P2P | Любой банк", "commission": 1.0, "minimal_amount": 500, "id": 2, "name":  "СБП P2P", "type": "pay_out", "active": false, "need_amount": false, "link": "https://t.me/sbp_p2p_pay_bot_cyber_sport_bot", "allowed_methods": [], "type_id": 0, "need_requisites": false, "name_requisites": "", "currency_id": null, "recipient_type_id": null}},
+    "auth_data": {"AIFORY": {"ua": "1nl)B[", "apikey": "gF4qF7GemEVScSquaoRAr3MTDajsMcTWjlqXs4D2G1NZGbkjtQ11l7mZqUuyiPCdOGdU51ta3BtHnjn12HL3pmJi5Pv54UYc6irHHVvwvODVEmYEzFnaeppaLJmeFHoej6WVu49JN4rPeI44hNTfFRZe3E7tdQLbYQ3w3EjHaOSIXtxiLtEl3nw6gvTDM8dYRgDBZrMjFniXyiWZg1GpXLhNP9fvL8wWM8HDZkRutFvCMrWOjNh1T2eEm4UEb1uH", "secret_key": "aMiWwR9RlFEtTkG0wYiWiIaIzPcim6e42TxhnceGZDNrG9Zjx3k6H5mtSOgdY4pyGxY1Lq0C6qUI4AyUNZltqU0NLIeoB6rDCSxlwXkrYMkUwIGidqOSilynBD9mM453cYLFDswbKAl2JAbn6J9W0egXHvYRMnTxydS7hGL2EL4PDcQZwPMx0KZffEcG9HgeUTnTMAHlTZh29Sfv5zSRTJONBIsch9yksUINUmzWSXsd9WZzmowkvvAwUWmzODMZ", "ttl": 3600}},
+    "web_hook_url": "https://luckypunch.space//payment/web_hook",
+    "failed_url": "https://t.me/ILuckyPunchI_bot",
+    "success_url": "https://t.me/ILuckyPunchI_bot",
+    "web_hook_poll_ip": ["207.154.235.84", "46.101.152.230"]
+  },
+  "jwt": {
+    "access_secret_key": "999e75e1dd324930b4daa7a9e54003ba06e282b917754f39b897992f94c0a93b0a93b",
+    "refresh_secret_key": "f9803252b45046099c462370cd68256ae696def537444769804f8d0b93a6df29df29",
+    "access_time_live": 86400,
+    "refresh_time_live": 604800,
+    "algorithm": "HS256",
+    "secure_https_cookie": false
+  }
+}
