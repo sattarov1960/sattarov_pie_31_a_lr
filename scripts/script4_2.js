@@ -12,7 +12,7 @@ function calculatePolynomialSum(A, N) {
 
     // Цикл для вычисления суммы
     for (let i = 1; i <= N; i++) {
-        term *= -A; // На каждом шаге умножаем предыдущий член на -A
+        erm *= -A; // На каждом шаге умножаем предыдущий член на -A
         console.log(`Шаг ${i}: term = ${term}`);
         
         result += term; // Добавляем текущий член к результату
@@ -31,7 +31,7 @@ function calculatePolynomial() {
 
     // Проверка на корректный ввод
     if (isNaN(a) || isNaN(n)) {
-        document.getElementById("result2").innerText = "Введите корректный массив чисел!";
+        document.getElementById("result2").innerText = "Введите корректные числа!";
         return;
     }
     

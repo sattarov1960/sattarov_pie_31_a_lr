@@ -1,11 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Продукты</title>
+    <link rel="stylesheet" href="../Style/style.css">
 </head>
 <body>
-    
+    <h1>Список продуктов</h1>
+    <button onclick="fetchAllProducts()">Показать все продукты</button> <!-- Кнопка для показа всех продуктов -->
+    <div id="container"></div>
+
+    <h2>Поиск продуктов</h2>
+    <input type="text" id="searchInput" placeholder="Введите название продукта">
+    <button onclick="findProducts()">Найти</button>
+    <div id="searchContainer"></div>
+
+    <footer style="text-align: center; margin-top: 20px; font-size: 14px; color: #777;">
+        Сделал: pie31 Sattarov
+    </footer>
+
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
