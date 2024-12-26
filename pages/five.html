@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Квест: Тайна Заброшенной Обсерватории</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        #quest-title {
+            font-size: 2.5em;
+            margin-top: 50px;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        #quest-story {
+            font-size: 1.2em;
+            margin-top: 20px;
+            display: none;
+        }
+        .show {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="quest-title">Тайна Заброшенной Обсерватории</div>
+    <div id="quest-story">
+        <p>Вы находите старую записку с упоминанием загадочного артефакта, спрятанного в обсерватории на вершине холма.</p>
+        <p>Артефакт, как говорят, может исполнить любое желание. Но чтобы добраться до него, нужно пройти через три испытания...</p>
+        <p>Время начать приключение!</p>
+    </div>
+
+    <script>
+        // Показать название квеста с задержкой
+        const titleElement = document.getElementById('quest-title');
+        const storyElement = document.getElementById('quest-story');
+
+        setTimeout(() => {
+            titleElement.classList.add('show');
+        }, 500);
+
+        // Показать завязку после названия
+        setTimeout(() => {
+            storyElement.style.display = 'block';
+        }, 3000);
+    </script>
 </body>
 </html>
