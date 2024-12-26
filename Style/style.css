@@ -92,4 +92,12 @@ button:hover {
 h2, #searchContainer, #container {
     margin-top: 20px;
 }
-Ы
+.lr{
+    display: flex;
+    justify-content: center;
+    gap: 100px
+}
+.p_wrap{
+    display: flex;
+    justify-content: center;
+}

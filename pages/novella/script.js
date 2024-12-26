@@ -173,6 +173,16 @@ function restartGame() {
     setGame(currentStep); // Отображаем первый вопрос
 }
 
+function logInfluenceScores() {
+    console.log("Текущие категории влияния и их значения:");
+
+    for (const category in influenceScores) {
+        console.log(`${category}: ${influenceScores[category]}`);
+    }
+
+    console.log("Конец списка категорий.");
+}
+
 // Функция для отображения конечного экрана
 function showFinalScreen(option) {
     const mainElement = document.querySelector('.game__main');

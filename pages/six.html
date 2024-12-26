@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <title>Лабораторная работа</title>
 </head>
 <body>
-    
+    <div class="p_wrap">
+        <p>Лабораторная работа № 6</p>
+    </div>
+    <div class="lr">
+        <div class="task1">
+            <h3 class="task_text_number">Задание 1</h3>
+            <div class="task_input">
+              <div>
+                <label class="label_text_main">Введите N: </label>
+              </div>
+              <label class="label_text_desc">N должно быть целым  числом  N (>  1)</label>
+              <div>
+                <label class="label_text_main">Введите набор целых чисел: </label>
+                <input type="text" id="numbers" class="task_input_text_number" value="1 2 3 4 5">
+              </div>
+              <label class="label_text_desc">набор должен состоять только из целых чисел, писать через пробел</label>
+            </div>
+            <div id="calc1">
+                <button class="btn_get_answer" onclick="calculateSmallerThanLeft()">Получить ответ</button>
+                <div id="result1" class="task_text_answer">Ответ: Не подсчитан</div>
+            </div>
+        </div>
+        
+        <div class="task2">
+            <h3 class="task_text_number">Задание 2</h3>
+            <div class="task_input">
+              <label class="label_text_main">Введите A:</label>
+              <input type="text" id="a" class="task_input_text_number">
+            </div>
+            <label class="label_text_desc">A должно быть вещественное</label>
+            <div class="task_input">
+                <label class="label_text_main">Введите N:</label>
+            </div>
+            <label class="label_text_desc">N должно быть целым  числом</label>
+            <div id="calc2">
+                <button class="btn_get_answer" onclick="calculatePolynomial()">Получить ответ</button>
+                <div id="result2" class="task_text_answer">Ответ: Не подсчитан</div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/script6_1.js"></script>
+    <script src="../scripts/script6_2.js"></script>
 </body>
 </html>
