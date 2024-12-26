@@ -29,7 +29,7 @@ function calculateMatrixColumnSums() {
 
     // Проверяем корректность матрицы
     if (rows.some((row) => row.some(isNaN))) {
-        document.getElementById("result2").innerText = "Введите корректную матрицу чисел!";
+        document.getElementById("result1").innerText = "Введите корректную матрицу чисел!";
         return;
     }
 
@@ -37,6 +37,6 @@ function calculateMatrixColumnSums() {
     const evenColumnSums = calculateColumnSums(rows);
 
     // Выводим результат
-    document.getElementById("result2").innerText = 
+    document.getElementById("result1").innerText = 
         `Суммы для чётных столбцов: ${evenColumnSums.length ? evenColumnSums.join(', ') : 'нету чётных столбцов'}`;
 }
