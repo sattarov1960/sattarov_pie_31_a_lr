@@ -5,8 +5,8 @@ function calculateColumnSums(matrix) {
     let evenColumnSums = [];
     
     // Определяем количество строк и столбцов
-    const rows = matrix.length;
-    const cols = matrix[0].length;
+    let rows = matrix.length;
+    let cols = matrix[0].length;
 
     // Перебираем столбцы с чётным индексом (2, 4, ...)
     for (let j = 1; j < cols; j += 2) {
@@ -24,19 +24,46 @@ function calculateColumnSums(matrix) {
 
 function calculateMatrixColumnSums() {
     // Читаем матрицу из текстового поля
-    const matrixInput = document.getElementById("matrix").value;
-    const rows = matrixInput.trim().split('\n').map(row => row.split(' ').map(Number));
+    let matrixInput = document.getElementById("matrix").value;
+    let rows = matrixInput.trim().split('\n'); // Разбиваем строки
 
-    // Проверяем корректность матрицы
-    if (rows.some((row) => row.some(isNaN))) {
-        document.getElementById("result1").innerText = "Введите корректную матрицу чисел!";
-        return;
+    // Преобразуем строки в матрицу
+    let matrix = [];
+    for (let i = 0; i < rows.length; i++) {
+        let row = rows[i].trim().split(' '); // Разделяем строку по пробелам
+        let numbers = [];
+        for (let j = 0; j < row.length; j++) {
+            numbers.push(parseInt(row[j], 10)); // Преобразуем в число
+        }
+        matrix.push(numbers);
+    }
+
+    // Проверяем корректность матрицы (все элементы должны быть числами)
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            if (isNaN(matrix[i][j])) {
+                document.getElementById("result1").innerText = "Введите корректную матрицу чисел!";
+                return;
+            }
+        }
     }
 
     // Вызываем функцию для расчёта
-    const evenColumnSums = calculateColumnSums(rows);
+    let evenColumnSums = calculateColumnSums(matrix);
+
+    // Формируем строку результата
+    let result = "Суммы для чётных столбцов: ";
+    if (evenColumnSums.length > 0) {
+        for (let i = 0; i < evenColumnSums.length; i++) {
+            result += evenColumnSums[i];
+            if (i < evenColumnSums.length - 1) {
+                result += ", ";
+            }
+        }
+    } else {
+        result += "нету чётных столбцов";
+    }
 
     // Выводим результат
-    document.getElementById("result1").innerText = 
-        `Суммы для чётных столбцов: ${evenColumnSums.length ? evenColumnSums.join(', ') : 'нету чётных столбцов'}`;
+    document.getElementById("result1").innerText = result;
 }
